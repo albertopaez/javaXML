@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+<xs:complexType name="Profesor">
+    <xs:sequence>
+      <xs:element name="codigoprofesor" type="xs:string"/>
+      <xs:element name="nombreprofesor" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Profesores">
+    <xs:sequence>
+      <xs:element name="profesor" type="Profesor" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Centro">
+    <xs:sequence>
+      <xs:element name="codigocentro" type="xs:string"/>
+      <xs:element name="nombrecentro" type="xs:string"/>
+      <xs:element name="director" type="Profesor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Datoscentro">
+    <xs:sequence>
+      <xs:element name="centro" type="Centro"/>
+      <xs:element name="profesores" type="Profesores"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="datoscentro" type="Datoscentro"/>
+  </xs:schema>

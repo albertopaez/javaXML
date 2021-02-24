@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:datoscentro xmlns:p="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com centrosprofes.xsd ">
+  <p:centro>
+    <p:codigocentro>123456789</p:codigocentro>
+    <p:nombrecentro>Salesianas Maria Auxiliadora</p:nombrecentro>
+    <p:director>
+      <p:codigoprofesor>12345</p:codigoprofesor>
+      <p:nombreprofesor>Paco</p:nombreprofesor>
+    </p:director>
+  </p:centro>
+  <p:profesores>
+    <p:profesor>
+      <p:codigoprofesor>12345</p:codigoprofesor>
+      <p:nombreprofesor>Paco</p:nombreprofesor>
+    </p:profesor>
+    <p:profesor>
+      <p:codigoprofesor>12745</p:codigoprofesor>
+      <p:nombreprofesor>Manolo</p:nombreprofesor>
+    </p:profesor>
+    <p:profesor>
+      <p:codigoprofesor>17345</p:codigoprofesor>
+      <p:nombreprofesor>Antonio</p:nombreprofesor>
+    </p:profesor>
+  </p:profesores>
+</p:datoscentro>
